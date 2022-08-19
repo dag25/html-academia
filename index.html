@@ -14,10 +14,11 @@
 <body>
   <header class="header">
     <div class="container  header__container">
-      <a class="logo" href="#">
-        <img class="logo__img" src="img/logo.svg" width="90" height="25" alt="SCANDI">
-      </a>
+
       <nav class="nav">
+        <a class="logo" href="#">
+          <img class="logo__img" src="img/logo.svg" width="90" height="25" alt="SCANDI">
+        </a>
         <ul class="nav__list  list-reset">
           <li class="nav__item">
             <a class="nav__link" href="#">
@@ -50,10 +51,16 @@
             </a>
           </li>
         </ul>
+        <a class="phone" href="tel:+79818574624">
+          +7 (981) 857-46-24
+        </a>
       </nav>
-      <a class="phone" href="tel:+79818574624">+7 (981) 857-46-24</a>
-
-      <h1 class="header__title">
+    </div>
+  </header>
+  <main class="main">
+    <section class="promo">
+      <div class="container">
+        <h1 class="header__title">
         Поможем сделать вашу квартиру уютнее
       </h1>
       <p class="header__subtitle">
@@ -62,23 +69,24 @@
       <button class="header__btn  btn-reset  btn">
         Оставить заявку
       </button>
-    </div>
-  </header>
-  <main class="main">
+      </div>
+    </section>
     <section class="about">
       <div class="container  about__container">
         <h2 class="about__title  section__title">
           О нас
         </h2>
-        <div class="about__left"></div>
-        <div class="about__right">
-          <p class="about__text">
-            Премиальный европейский текстиль — одно из самых главных направлений работы коллектива. Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то,  что по-настоящему вдохновляет дизайнеров нашей студии.
-          </p>
-          <p class="about__text">
-            Наш коллектив сделает все, чтобы после сотрудничества с нами,  Вам было приятно сказать:
-            « Да! Это именно то, что действительно достойно моего дома!»
-          </p>
+        <div class="about__wrapper">
+          <img class="about__img" src="img/about-bg.jpg" alt="table" width="455" height="465">
+          <div class="about__content">
+            <p class="about__text">
+              Премиальный европейский текстиль — одно из самых главных направлений работы коллектива. Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то,  что по-настоящему вдохновляет дизайнеров нашей студии.
+            </p>
+            <p class="about__text">
+              Наш коллектив сделает все, чтобы после сотрудничества с нами,  Вам было приятно сказать:
+              « Да! Это именно то, что действительно достойно моего дома!»
+            </p>
+          </div>
         </div>
       </div>
     </section>
