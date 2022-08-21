@@ -585,41 +585,39 @@ blockquote {
 
 .feedback__list::before {
   background-image: url("../img/arrow-left-white.svg");
-  left: 0;
+  left: 70px;
   background-size: 32px 32px;
 }
 
 .feedback__list::after {
   background-image: url("../img/arrow-right-white.svg");
-  right: 0;
+  right: 70px;
   background-size: 32px 32px;
 }
 
+/* order */
+
+
 .order {
-  position: relative;
-  padding-top: 50px;
-  padding-bottom: 175px;
   background-color: #8d7370;
 }
 
-.order::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 27%;
-  display: block;
-  width: 590px;
-  height: 624px;
-  background-image: url("../img/map.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+.order__container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 80px;
 }
 
 .order__title {
   margin-bottom: 24px;
   text-align: left;
   color: #fff;
+}
+
+.order__content {
+  padding-top: 50px;
+  margin-right: 20px;
+  max-width: 508px;
 }
 
 .order__subtitle {
@@ -650,25 +648,13 @@ blockquote {
 .order__input {
   padding-bottom: 15px;
   padding-right: 10px;
-  height: 30px;
-  width: 508px;
-  max-width: 508px;
+  height: 50px;
+  width: 100%;
+
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #fff;
 }
-
-/* .order__label::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  display: block;
-  height: 1px;
-  width: 508px;
-  background-color: #fff;
-
-} */
 
 .order__input::placeholder {
   font-family: 'Montserrat';
@@ -679,6 +665,7 @@ blockquote {
   color: #f6ede9;
 }
 
+/* footer */
 
 .footer {
   padding-top: 37px;
@@ -689,19 +676,20 @@ blockquote {
 .footer__container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+
+  align-items: center;
 }
 
 .footer__phone {
-  grid-column: 1/3;
-  margin-left: 0;
+  grid-column:1 / 3;
+  justify-self: flex-start;
 }
 
 .address {
-  grid-column: 3/9;
+  grid-column: 3 / 8;
 }
 
 .name {
-  grid-column: 11/13;
-  display: flex;
-  justify-content: end;
+  grid-column: 11 / 13;
+  justify-self: flex-end;
 }
